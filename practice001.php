@@ -1,34 +1,92 @@
 <?php
-echo  'hello php!';
+
+$height =160;
+ if ($height <150 ) {
+     echo "150㎝　未満の方はご乗車できません";
+ } else {
+     echo "ご乗車になれます";
+ }
+
+$height =230;
+ if ($height < 150){
+     echo "150㎝　未満の方はご乗車できません";
+ }else if ($heightb >= 200) {
+     echo "200㎝　以上の方はご乗車できません";
+ }else {
+     echo "ご乗車になれます";
+ }
+ 
+$weekday ="月曜";
+
+switch($weekday) {
+    case "月曜":
+        echo "可燃ごみの日です";
+        break;
+    case "水曜":
+        echo "資源ごみの日です";
+        break;
+    default:
+        echo "回収はありません";
+        break;
+}
+
+switch ($weekday) {
+    case "月曜":
+    case "木曜":
+        echo "可燃ごみの日です";
+        break;
+    case "水曜":
+        echo "資源ごみの日です";
+        break;
+    default:
+        echo "回収はありません";
+        break;
+}
 
 $a = 3;
-$b = 7;
-echo $a + $b ;
+$b = 3;
+$c = "3";
 
-$array_month = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
-echo $array_month[7];
+var_dump($a == $b);
+var_dump($a != $b);
+var_dump($a > $b);
+var_dump($a >= $b);
+var_dump($a < $b);
+var_dump($a <= $b);
+var_dump($a === $c);
+var_dump($a !== $c);
 
-$hello = "Hello, ";
-$name = "Yasuhiro";
-$world = "'s World!";
-echo $hello . $name . $world ;
+for ($i = 0; $i < 10; $i++){
+    echo $i;
+}
 
-$tech_boost ="tech";
-$tech_boost .=" boost";
-echo $tech_boost;
+$total = 0;
 
-$calender_2018=[
-    "January" => "1月",
-    "Febuary" => "2月",
-    "March" => "3月",
-    "April" => "4月",
-    "May" => "5月",
-    "June" => "6月",
-    "July" => "7月",
-    "August" => "8月",
-    "September" => "9月",
-    "Octover" => "10月",
-    "November" => "11月",
-    "December" => "12月"
-];
-echo $calender_2018["December"];
+for ($i = 0; $i <= 100; $i++){
+    $total += $i;
+}
+
+echo $total;
+
+$fruits = array("apple","orange","lemon");
+echo count($fruits);
+
+for ($i =0; $i <count($fruits); $i++) {
+    echo "要素は". $fruits[$i];
+    echo "\n";
+}
+
+$animals =array("dog","cat","panda");
+
+foreach ($animals as $animal){
+    echo "yousoha". $animal;
+    echo "\n";
+}
+
+//
+
+/*
+aa
+aa
+aa
+*/
