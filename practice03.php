@@ -13,7 +13,7 @@ if ($name == "yasuhiro"){
 $total = 0;
 
 for ($i =0; $i <=10000; $i++) {
-    $total = $total + $i;
+    $total +=  $i;
 }
     echo $total;
     echo "\n";
