@@ -1,21 +1,61 @@
 <?php
 
-function double($aaa){
-    return  $aaa *2;
+//1
+function double($aaaa) {
+    return $aaaa *2 ;
 }
-    $aaa =125;
-    echo double($aaa);
+    echo double(111111);
 
-
-function f($a ,$b){
-    return $a+$b;
+//2
+function sum($a,$b) {
+    return $a + $b ;
 }
-    $a = 1111;
-    $b = 2222;
+    echo sum(1000,12345);
 
-    echo f($a ,$b);
+//3
+function multi($arr) {
+    $result =1 ;
+    foreach ($arr as $bbbb){
+        $result *= $bbbb;
+    }
+    return $result;
+}
+    echo multi(array(1,3,5,7,9));
 
-//課題3
+//4
+function max_array($arr){
+    $max_number = $arr[0];
+    foreach ($arr as $a){
+        if ($max_number < $a){
+            $max_number = $a;
+        }
+    }
+    return $max_number;
 
+    echo max_array(array(1111,2222,3333,4444,5555));
+    echo "\n";
+
+//5
+ //array_push
+ $members = array("1","2","3","4","5","6");
+ array_push ($members,"7","8","9");
+ print_r($members);
+
+ //array merge
+ $array1 =[1,2,5];
+ $array2 =[6,9,10];
+ 
+ $array = array_merge($array1, $array2);
+ print_r($array);
+
+ //time mktime
+ echo time();
+ echo mktime();
+ 
+ //date
+ echo date("Y/m/t");
+    
+    
+    
 
 ?>
