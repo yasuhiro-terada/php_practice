@@ -1,0 +1,270 @@
+header {
+    height: 200px;
+    width: 100%;
+    background-color: #f2f2f200;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    /*①header-listは最上部（ロゴとロゴの間）に持ってきたい*/
+}
+
+.header-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left-logo {
+    width: 107px;
+    flex-basis: 107px;
+    background-color: black;
+}
+
+.right-logo {
+    width: 104px;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+
+.header-list {
+    flex-basis: 100%;
+    display: inline-block;
+}
+
+.header-list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding:15px 0;
+}
+
+.header-list li {
+    border-bottom :dashed 2px orange;
+}
+
+.main-image {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-image img {
+    width: 40%;
+    height: auto;
+}
+
+.news {
+    height: 300px;
+    padding-top: 20px;
+}
+
+.news p {
+    width:60px;
+    border-bottom: dashed 2px brown;
+}
+
+.news ul {
+    list-style: none;
+}
+
+.news li {
+    padding: 10px 0;
+    border-bottom: dashed 1px gray;
+}
+
+.concept1 {
+    margin-bottom: 10px;
+    background-image: url("http://cafe-tortue.jp/image/con_img001_sp.jpg");
+    background-size: cover;
+    width: 100%;
+    height:480px;
+    /*②padding-bottomが効かない？（写真同志を10px離したい）*/
+}
+
+.concept-message1 {
+    background-color: white;
+    width: 50%;
+    margin: 0 0 0 auto;  
+    /*③テキストメッセージを写真の右端に合わせたい*/
+}
+
+.concept2 {
+    background-image: url("https://la-pan.jp/image/kodawari_img001.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 30px;
+}
+
+    /*④image1と写真のサイズが合っていない*/
+
+.concept-message2 {
+    background-color: white;
+    width: 50%;
+    margin: 0 0 0 auto;
+}
+
+.food{
+    width: 100%;
+}
+
+.food-icon {
+    height: 200px;
+    text-align: center;
+}
+
+.food-select {
+    display: flex;
+    height: 100px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-select p{
+    padding: 15px 15px;
+    margin: 0 10px;
+    border: 2px solid gray;
+    background-color: white;
+    font-size: 18px;
+}
+
+.bread-select {
+    width: 100%;
+    text-align: center;
+}
+
+.choise {
+    display:flex;
+    height: 450px;
+    justify-content: center;
+    /*⑤水平方向のズレを解消したい*/
+}
+
+.rare-bread {
+    height: 400px;
+    padding: 15px;
+}
+
+.baked-bread {
+    height: 400px;
+    padding: 15px;
+}
+
+.or {
+    padding-top:140px;
+}
+
+.plus {
+    text-align:center;
+}
+
+.sidemenu-select {
+    text-align: center;
+}
+
+.side-menus {
+    display: flex;
+}
+
+.side-menu {
+    width: 25%;
+    padding: 5px 5px;
+}
+
+.side-menu img {
+    width: 100%;
+}
+
+.set {
+    font-size: 18px;
+}
+
+.option {
+    font-size: 16px;
+}
+
+.drink {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.left-contents {
+    width: 50%;
+    text-align: center;
+}
+
+.drink-menu p {
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+}
+
+
+.right-contents {
+    width: 50%;
+    text-align: left;
+    border-left: 3px solid #000000 ;
+    padding-left: 15px;
+}
+
+.right-contents img{
+    width: 70%;
+    height: auto;
+}
+
+.access {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.address {
+    display: flex;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+    /*⑦一番上の画像だけ、左にスペースが生まれてしまっている*/
+
+.information {S
+    padding: 20px 15px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.information-logo img {
+    background-color: white;
+    width: 150px;
+    height: auto;
+}
+
+.information-message h2 {
+    padding-left: 50px;
+    margin: 0;
+}
+
+.information-message p {
+    padding-left: 50px;
+}
+
+.information-message a {
+    padding-left: 50px;
+    color: white;
+}
+
+footer {
+    padding-top:25px;
+    height: 200px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+}

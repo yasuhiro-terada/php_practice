@@ -54,8 +54,5 @@ function max_array($arr){
  
  //date
  echo date("Y/m/t");
-    
-    
-    
-
-?>
+ 
+ ?>

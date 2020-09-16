@@ -1,0 +1,459 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote,p {
+    quotes:none;
+}
+
+blockquote:before,blockquote:after,
+q:before,q:after {
+    content:'';
+    content:none;
+}
+
+table {
+    borcallapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    margin: 60px 40px;
+}
+
+p,a {
+    color: rgb(119,119,119);
+}
+
+/*header*/
+.header-container {
+    width: 1035px;
+    margin: 0 auto;
+}
+
+.header-top {
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    margin-bottom: 70px;
+}
+
+.header-logo{
+     padding: 10px;
+}
+
+.header-logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-discription {
+ padding-top: 4px;   
+}
+
+.logo-discription p{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.navi-content ul{
+    display: flex;
+    justify-content:space-between;
+}
+.navi-content li{
+    padding: 0 16px;
+    color: rgb(119,119,119);
+    font-size: 17px;
+    line-height: 52px;
+}
+
+.search {
+    line-height: 52px;
+}
+
+.header-ham {
+    display: none;
+}
+
+/*main-image*/
+.main-image-caption{
+    margin: 90px 0;
+    padding: 0 0 25px 0;
+    font-size: 27px;
+    line-height: 48px;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+/*投稿*/
+.post-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-data{
+    padding-right: 75px;
+}
+
+.post data p{
+    line-height: 30px;
+}
+
+.post-body {
+    width: 700px;
+    margin-bottom: 75px;
+    padding-left: 75px;
+}
+
+.post-title {
+    margin-bottom: 24px;
+}
+
+.post-title h2 {
+    font-size: 22.4px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+.post-discription {
+    font-size: 16.7px;
+    line-height: 30px;
+}
+
+.page-links {
+    width: 700px;
+    float: right;
+    margin-bottom: 75px;
+}
+
+.page-number {
+    display: inline-block;
+    font-size:16.88px;
+    line-height: 30px;
+    padding: 8px 18px;
+    margin-right: 6px;
+    border: solid 1px rgb(204,204,204);
+}
+
+/*footer*/
+
+.footer-container {
+    width:1035px;
+    height:385px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 75px;
+    border-top: solid 1px rgb(230,230,230);
+}
+
+.profile-container{
+    width: 260px;
+    height: 260px;
+    font-size: 16.8px;
+    line-height: 28px;
+    padding-right: 75px;
+}
+
+.profile-top {
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image-to-circle{
+    background-image: url("../img/profile-m.png");
+    width:  100px;  /*画像がoutputされない*/
+    height: 100px;
+    border-radius: 50%;
+    background-position: center-top;
+    margin-right: 20px;
+}
+
+.profile-name {
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.profile-name p {
+    color: black;
+    font-size:18.9px;
+}
+
+.profile-sns {
+    margin-top:4px;
+}
+
+.profile-sns a{
+    font-size: 22px;
+}
+
+.footer-widget {
+    display:flex;
+}
+
+.widget-area {
+    width: 33.33%;
+}
+
+.widget-title {
+    font-size: 14.4px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.widget-1 {
+    padding-right: 17px;
+}
+
+.widget-1 p {
+    line-height:26px;
+    font-size: 15.8px;
+}
+
+.widget-2 {
+    padding-left: 19px;
+    padding-right: 21px;
+}
+
+.widget-2-list li,widget-3-list li {
+    margin-bottom: 14px;
+}
+
+.widget-2-list li a,widget-3-list li a {
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    line-height: 28px;
+    font-size: 16.88px;
+}
+
+.widget-3 {
+    padding-left: 19px;
+}
+
+.footer-search {
+    margin-top: 75px;
+}
+
+#sbox2{
+    max-width: 182px;
+    width:100%;
+    padding: 0.6em;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+/*footer-bottom*/
+.page-bottom-container {
+    max-width: 1035px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    border-top: solid 1px rgb(230,230,230);
+}
+
+.bottom-items{
+    display: flex;
+}
+
+.bottom-sns a {
+    font-size: 22px;
+}
+
+.site-info {
+    width: 700px;
+    margin: 0 0 0 auto;
+}
+
+.site-info a {
+    text-decoration :none;
+    color:black;
+}
+
+/*responsible-CSS */
+@media screen and (max-width: 780px){
+    /*header*/
+    .header-container{
+        width:700px;
+    }
+    .header-top{
+        margin-bottom: 50px;
+    }
+    .header-logo h1{
+        font-size: 30px;
+    }
+    .logo-discription p{
+        font-size: 15px;
+    }
+    .header-navi {
+        display:none;
+    }
+    .header-search {
+        display: none;
+    }
+    .main-image img {
+        width: 700px;
+        height:357px;
+    }
+    
+    .main-image-caption {
+        margin:50px 0;
+        padding:0;
+    }
+    .main-image-caption p{
+        font-size:23px;
+    } 
+    /*ham*/
+    .header-ham{
+        display:block;
+    }
+    .hamburger {
+        position:fixed;
+        top:0;
+        right:0;
+        z-index:100;
+        padding-top:18px;
+        padding-right:8px;
+    }
+    /*投稿*/
+    .post-wrap{
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+    .post-content {
+        display: block;
+    }
+    .post-body {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .post-data p{
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .post-title {
+        margin: 8px 0 24px 0;
+    }
+    .post-title h2{
+        font-size:19.04px;
+        line-height:24px;
+    }
+    .post-discription p{
+        font-size: 14.06;
+        line-height: 25px;
+    }
+    
+    /*pageNumber*/
+    .page-links{
+        margin-bottom: 60px;
+    }
+    
+    .page-links{
+        margin-bottom:60px;
+    }
+    .page-number{
+        font-size: 14.07px;
+        line-height:25px;
+    }
+    /*footer*/
+    .footer-container {
+        width: 700px;
+        height:auto;
+        display:block;
+    }
+    .profile-container {
+        width:100%;
+        padding-right:0;
+    }
+    .profile-name p{
+        font-size:15.82px;
+    }
+    .profile-text p{
+        font-size: 14.07px;
+    }
+    .footer-widget{
+        display: block;
+    }
+    .widget-area {
+        width: 100px;
+    }
+    .widget-1 {
+        padding:0;
+        margin-bottom: 120px;
+    }
+    .widget-title{
+     margin-bottom: 30px;
+     font-size:12.24px;
+     line-height: 17px;
+    }
+    .widget-1 text p{
+        font-size: 13.19px;
+        line-height: 22px;
+    }
+    .widget-2-list li p{
+        font-size: 12.19px;
+        line-height: 20px;
+    }
+    .widget-3 {
+        padding:0;
+    }
+    .widget-3-list {
+        margin-bottom: 60px;
+    }
+    #sbox2 {
+        max-width:300px;
+    }
+    /*footer-bottom*/
+    .page-bottom-container {
+        padding-top: 45px;
+    }
+    .bottom-items {
+        display:block;
+    }
+    .bottom-sns {
+        margin-bottom: 25px;
+    }
+    .site-info p {
+        font-size:13.125px;
+    }
+    
+}
