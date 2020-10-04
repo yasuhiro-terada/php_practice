@@ -1,0 +1,156 @@
+li{
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: #fff;
+    position: fixed;
+}
+
+.hamburger {
+    display: none;
+    width:32px;
+    height: auto;
+    cursor: pointer;
+}
+
+.hamburger div {
+    background-color: #fafafa;
+    border-radius: 20px;
+    padding: 2px 5px;
+    margin: 4px 0;
+}
+
+.hamburger p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+    .header-left {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .header-right {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        width: 100%;
+        height: auto;
+    }
+    .active {
+        display: flex;
+    }
+}
+
+
+
+.header-left ul {
+    display:flex;
+    align-items: center;
+}
+
+.header-left ul li {
+    padding: 5px 15px;
+}
+
+.header-right ul{
+    display: flex;
+    align-items: center;
+}
+
+.header-right ul li {
+    padding: 5px 15px;
+}
+
+.register , .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section01 {
+    background-image: url("img/top-image.jpg");
+    background-size: cover;
+    padding: 15px 0;
+}
+
+.top-message {
+    padding: 30px;
+}
+
+.top-message h1 {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom: 3px solid #ffa130;
+}
+
+.news {
+    width: 80%;
+    padding: 30px 0;
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+.news h1 {
+    font-size: 1em;
+}
+
+.pr {
+    background-color: #fff;
+    margin: 50px 30px;
+    padding: 50px 30px;
+}
+
+.record {
+    display: flex;
+    justify-content: center;
+}
+
+.user-amount, .deal-amount,.matching-amount {
+    background-color: #004c90;
+    padding:15px 30px;
+    margin:0 15px;
+}
+
+.user-amount img,.deal-amount img,.matching-amount img {
+    margin-top: -35px;
+}
+
+
+.record-title {
+    color: #ffa130;
+    text-align: center;
+}
+
+.record-amount {
+    color: #fff;
+    text-align: center;
+}
+
+.sub-message {
+    text-align: center;
+}
+
+.sub-message h3 {
+    font-size: 16px;
+}
+
+.sub-message p {
+    font-size: 10px;
+}

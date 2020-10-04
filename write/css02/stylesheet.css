@@ -124,13 +124,24 @@ p,a {
 }
 
 /*投稿*/
+
+.post-wrap {
+    margin: 0 auto;
+}
+
+.post-container {
+    width: 1035px;
+    margin: 0 auto;
+}
+
 .post-content{
     display: flex;
     justify-content: space-between;
 }
 
 .post-data{
-    padding-right: 75px;
+    padding-right: 5px;
+    margin-left: 50px;
 }
 
 .post data p{
@@ -138,9 +149,9 @@ p,a {
 }
 
 .post-body {
-    width: 700px;
+    width: 850px;
     margin-bottom: 75px;
-    padding-left: 75px;
+    padding-left: 5px;
 }
 
 .post-title {
@@ -200,10 +211,10 @@ p,a {
 
 .profile-image-to-circle{
     background-image: url("../img/profile-m.png");
-    width:  100px;  /*画像がoutputされない*/
-    height: 100px;
+    width:  180px;  /*画像がoutputされない*/
+    height: 180px;
     border-radius: 50%;
-    background-position: center-top;
+    background-position: center top;
     margin-right: 20px;
 }
 
@@ -384,11 +395,7 @@ p,a {
     
     /*pageNumber*/
     .page-links{
-        margin-bottom: 60px;
-    }
-    
-    .page-links{
-        margin-bottom:60px;
+		margin-bottom: 60px;
     }
     .page-number{
         font-size: 14.07px;
